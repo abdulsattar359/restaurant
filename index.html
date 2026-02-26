@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EliteShop | Premium Store</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+    <div class="logo">EliteShop</div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#products">Products</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="cart-icon" onclick="toggleCart()">
+        🛒 <span id="cart-count">0</span>
+    </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Abdul Sattar`s Ecommerce Store Nisar </h1>
+        <p>Upgrade your lifestyle with our modern gadgets</p>
+        <button onclick="scrollToProducts()">Shop Now</button>
+    </div>
+</section>
+
+<!-- ================= FILTER ================= -->
+<section class="filter">
+    <button onclick="filterProducts('all')" class="active">All</button>
+    <button onclick="filterProducts('audio')">Audio</button>
+    <button onclick="filterProducts('wearable')">Wearables</button>
+    <button onclick="filterProducts('accessory')">Accessories</button>
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+<section class="products" id="products"></section>
+
+<!-- ================= PRODUCT MODAL ================= -->
+<div class="modal" id="product-modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeModal()">✖</span>
+        <img id="modal-img">
+        <h2 id="modal-title"></h2>
+        <p id="modal-price"></p>
+        <button id="modal-add">Add to Cart</button>
+    </div>
+</div>
+
+<!-- ================= CART SIDEBAR ================= -->
+<div class="cart" id="cart">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <h3 id="cart-total">Total: $0</h3>
+    <button class="checkout">Proceed to Checkout</button>
+</div>
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- Brand -->
+        <div class="footer-section">
+            <h2 class="footer-logo">EliteShop</h2>
+            <p>Your premium destination for modern tech products. 
+            Quality, innovation, and reliability in every purchase.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#products">Shop</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Customer Service -->
+        <div class="footer-section">
+            <h3>Customer Service</h3>
+            <ul>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Shipping Policy</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-section">
+            <h3>Newsletter</h3>
+            <p>Subscribe to get special offers & updates.</p>
+            <div class="newsletter">
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+
+            <div class="social-icons">
+                <a href="#">🌐</a>
+                <a href="#">📘</a>
+                <a href="#">📸</a>
+                <a href="#">🐦</a>
+
+<script src="script.js"></script>
+</body>
+</html>
